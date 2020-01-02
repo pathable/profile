@@ -1,6 +1,6 @@
 Package.describe({
   name: 'pathable:profile',
-  version: '0.0.13',
+  version: '0.0.14',
   summary:
     'Profile the Meteor build process, server startup, and server runtime.',
   git: 'https://github.com/pathable/profile',
@@ -15,13 +15,13 @@ if (
     name: 'pathable:profile',
     sources: ['profile.js', 'plugin.js'],
     npmDependencies: {
-      'v8-profiler-node8': '6.0.0',
+      'v8-profiler-next': '1.2.0',
     },
   });
 }
 
 Npm.depends({
-  'v8-profiler-node8': '6.0.0',
+  'v8-profiler-next': '1.2.0',
 });
 
 Package.onUse(function(api) {
